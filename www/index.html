@@ -1,34 +1,114 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Elcamino App</title>
-		<meta charset="utf-8">
-        <link rel="stylesheet" href="styles/main.css" />
-		<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-		<script type="text/javascript" charset="utf-8" src="scripts/main.js"></script>
-	</head>
-	<body>
-        <header class="header">
-            <h1>Elcamino App</h1>
-        </header>
-        <div class="content">
-        <h2><center>Coming Soon</center></h2>
-            <div class="action-area ch50">
-                <button class="button dh" id="capturePhotoButton1">Music</button>
-				<button class="button dh" id="capturePhotoEditButton1" >Pictures</button>
-                <button class="button dh" id="getPhotoFromLibraryButton1">Bios</button>
-		        <button class="button dh" id="getPhotoFromAlbumButton1">Events</button>
-                <button class="button dh" id="getPhotoFromAlbumButton1">Facebook</button>
-			</div>
-            <div class="result-area ch50">
-                <div class="results">
-                    
-                </div>
-				<div class="separator"></div>
-			</div>
+<head>
+	<title>Page Title</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="styles/jquery.mobile-1.4.2.min.css" />
+    <link rel="stylesheet" href="styles/main.css">
+	<script src="scripts/jquery.js"></script>
+	<script src="scripts/jquery.mobile-1.4.2.min.js"></script>
+</head>
+<body>
+
+<!-- Start of first page -->
+<div data-role="page" id="foo">
+
+	<div data-role="header">
+    	<a href="index.html" data-iconshadow="true" class="ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-notext"></a>
+		<h1>Bios</h1>
+         <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+         <div data-role="navbar" data-grid="d">
+    <ul>
+        <li><a href="#" class="ui-btn-active">Bios</a></li>
+        <li><a href="#">Songs</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Timeline</a></li>
+        <li><a href="#">Upcoming Events</a></li>
+    </ul>
+</div><!-- /navbar -->
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<p>
+        	<center><img src="images/bios-banner" alt="bios"></center>
+        </p>
+        <hr>
+        <div class="section">
+        	<h3>Daniel</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h4>Lorem</h4>
+            <ul>
+            	<li>Lorem Ipsum</li>
+                <li>Dolor set</li>
+            </ul>
         </div>
-        <!--<footer class="footer1">
-            
-        </footer>0-->
-	</body>
+        <hr>
+        <div class="section">
+        	<h3>Luan</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h4>Lorem</h4>
+            <ul>
+            	<li>Lorem Ipsum</li>
+                <li>Dolor set</li>
+            </ul>
+        </div>
+        <hr>
+        <div class="section">
+        	<h3>Margarita</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h4>Lorem</h4>
+            <ul>
+            	<li>Lorem Ipsum</li>
+                <li>Dolor set</li>
+            </ul>
+        </div>
+		<p>View internal page called <a href="#bar">bar</a></p>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#" data-icon="grid">Summary</a></li>
+                <li><a href="#" data-icon="star" class="ui-btn-active">Favs</a></li>
+                <li><a href="#" data-icon="gear">Setup</a></li>
+            </ul>
+        </div><!-- /navbar -->
+</div><!-- /footer -->
+<div data-role="panel" data-position-fixed="true" data-position="right" data-display="push" data-theme="b" id="nav-panel">
+        <ul data-role="listview">
+            <li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+                <li><a href="#panel-fixed-page2">Accordion</a></li>
+                <li><a href="#panel-fixed-page2">Ajax Navigation</a></li>
+                <li><a href="#panel-fixed-page2">Autocomplete</a></li>
+                <li><a href="#panel-fixed-page2">Buttons</a></li>
+                <li><a href="#panel-fixed-page2">Transitions</a></li>
+        </ul>
+    </div><!-- /panel -->
+</div><!-- /page -->
+
+<!-- Start of second page -->
+<div data-role="page" id="bar">
+
+	<div data-role="header">
+		<h1>Bar</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
+		<p><a href="#foo">Back to foo</a></p>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#" data-icon="grid">Summary</a></li>
+                <li><a href="#" data-icon="star" class="ui-btn-active">Favs</a></li>
+                <li><a href="#" data-icon="gear">Setup</a></li>
+            </ul>
+        </div><!-- /navbar -->
+</div><!-- /footer -->
+</div><!-- /page -->
+</body>
 </html>
