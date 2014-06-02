@@ -266,3 +266,6 @@ img {max-width:100%;}
 	background-color:#4cd964;
 	border-color:#4cd964;
 }
+.gal {margin-left:-10px;}
+.gal a{display:block; float:left; width:33.33%; padding-left:10px; padding-bottom:10px; box-sizing:border-box;}
+.gal a img {display:block; float:left;}

@@ -12,7 +12,7 @@
     <script src="scripts/fastclick.js"></script>
 </head>
 
-<body onload="initFastButtons();">
+<body onLoad="initFastButtons();">
 <span id="fastclick">
 <!-- Start of first page -->
 <div data-role="page" id="bios">
@@ -23,9 +23,9 @@
         <div data-role="navbar" data-grid="c">
     		<ul>
         		<li><a href="#" data-icon="user" class="ui-btn-active ui-state-persist">Bios</a></li>
-        		<li><a href="#songs" data-icon="audio">Songs</a></li>
-        		<li><a href="#gallery" data-icon="grid">Gallery</a></li>
-        		<li><a href="#events" data-icon="eye">Events</a></li>
+        		<li><a href="#songs" data-icon="audio" data-transition="slide">Songs</a></li>
+        		<li><a href="#gallery" data-icon="grid" data-transition="slide">Gallery</a></li>
+        		<li><a href="#events" data-icon="eye" data-transition="slide">Events</a></li>
     		</ul>
 		</div><!-- /navbar -->
 	</div><!-- /header -->
@@ -90,10 +90,10 @@
         <!--<a href="#nav-panel" data-icon="eye" data-iconpos="notext">Menu</a>-->
         <div data-role="navbar" data-grid="c">
     		<ul>
-        		<li><a href="#bios" data-icon="user">Bios</a></li>
+        		<li><a href="#bios" data-icon="user" data-transition="slide">Bios</a></li>
         		<li><a href="#" data-icon="audio" class="ui-btn-active ui-state-persist">Songs</a></li>
-        		<li><a href="#gallery" data-icon="grid">Gallery</a></li>
-        		<li><a href="#events" data-icon="eye">Events</a></li>
+        		<li><a href="#gallery" data-icon="grid" data-transition="slide">Gallery</a></li>
+        		<li><a href="#events" data-icon="eye" data-transition="slide">Events</a></li>
     		</ul>
 		</div><!-- /navbar -->
 	</div><!-- /header -->
@@ -123,27 +123,57 @@
         <!--<a href="#nav-panel" data-icon="eye" data-iconpos="notext">Menu</a>-->
         <div data-role="navbar" data-grid="c">
     		<ul>
-        		<li><a href="#bios" data-icon="user">Bios</a></li>
-        		<li><a href="#songs" data-icon="audio">Songs</a></li>
+        		<li><a href="#bios" data-icon="user" data-transition="slide">Bios</a></li>
+        		<li><a href="#songs" data-icon="audio" data-transition="slide">Songs</a></li>
         		<li><a href="#" data-icon="grid"  class="ui-btn-active ui-state-persist">Gallery</a></li>
-        		<li><a href="#events" data-icon="eye">Events</a></li>
+        		<li><a href="#events" data-icon="eye" data-transition="slide">Events</a></li>
     		</ul>
 		</div><!-- /navbar -->
 	</div><!-- /header -->
 
-	<div role="main" class="ui-content">
-		<a href="#popupParis" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="../_assets/img/paris.jpg" alt="Paris, France" style="width:30%"></a>
-<a href="#popupSydney" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="../_assets/img/sydney.jpg" alt="Sydney, Australia" style="width:30%"></a>
-<a href="#popupNYC" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="../_assets/img/newyork.jpg" alt="New York, USA" style="width:30%"></a>
-<div data-role="popup" id="popupParis" data-overlay-theme="b" data-theme="b" data-corners="false">
-    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="../_assets/img/paris.jpg" style="max-height:512px;" alt="Paris, France">
-</div>
-<div data-role="popup" id="popupSydney" data-overlay-theme="b" data-theme="b" data-corners="false">
-    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="../_assets/img/sydney.jpg" style="max-height:512px;" alt="Sydney, Australia">
-</div>
-<div data-role="popup" id="popupNYC" data-overlay-theme="b" data-theme="b" data-corners="false">
-    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="../_assets/img/newyork.jpg" style="max-height:512px;" alt="New York, USA">
-</div>ß
+	<div role="main" class="ui-content gal">
+		<a href="#popup1" data-rel="popup" data-position-to="window" data-transition="fade">
+        	<img class="popphoto" src="images/gallery/1.jpg" alt="">
+        </a>
+		<a href="#popup2" data-rel="popup" data-position-to="window" data-transition="fade">
+        	<img class="popphoto" src="images/gallery/2.jpg" alt="">
+        </a>
+		<a href="#popup3" data-rel="popup" data-position-to="window" data-transition="fade">
+        	<img class="popphoto" src="images/gallery/3.jpg" alt="">
+        </a>
+        <a href="#popup4" data-rel="popup" data-position-to="window" data-transition="fade">
+        	<img class="popphoto" src="images/gallery/4.jpg" alt="">
+        </a>
+		<a href="#popup5" data-rel="popup" data-position-to="window" data-transition="fade">
+        	<img class="popphoto" src="images/gallery/5.jpg" alt="">
+        </a>
+		<a href="#popup6" data-rel="popup" data-position-to="window" data-transition="fade">
+        	<img class="popphoto" src="images/gallery/6.jpg" alt="">
+        </a>
+		<div data-role="popup" id="popup1" data-overlay-theme="b" data-theme="b" data-corners="false">
+    		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+            <img class="popphoto" src="images/gallery/1.jpg" style="max-height:512px;" alt="">
+		</div>
+		<div data-role="popup" id="popup2" data-overlay-theme="b" data-theme="b" data-corners="false">
+    		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+            <img class="popphoto" src="images/gallery/2.jpg" style="max-height:512px;" alt="">
+		</div>
+		<div data-role="popup" id="popup3" data-overlay-theme="b" data-theme="b" data-corners="false">
+    		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+            <img class="popphoto" src="images/gallery/3.jpg" style="max-height:512px;" alt="">
+		</div>
+        <div data-role="popup" id="popup4" data-overlay-theme="b" data-theme="b" data-corners="false">
+    		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+            <img class="popphoto" src="images/gallery/4.jpg" style="max-height:512px;" alt="">
+		</div>
+		<div data-role="popup" id="popup5" data-overlay-theme="b" data-theme="b" data-corners="false">
+    		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+            <img class="popphoto" src="images/gallery/5.jpg" style="max-height:512px;" alt="">
+		</div>
+		<div data-role="popup" id="popup6" data-overlay-theme="b" data-theme="b" data-corners="false">
+    		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+            <img class="popphoto" src="images/gallery/6.jpg" style="max-height:512px;" alt="">
+		</div>
 	</div><!-- /content -->
 
 	<div data-role="footer">
@@ -163,12 +193,11 @@
 	<div data-role="header">
     	<a href="index.html" data-iconshadow="true" class="ui-btn ui-shadow ui-corner-all ui-icon-eye ui-btn-icon-notext ui-btn-active"></a>
 		<h1>Events</h1>
-        <a href="#nav-panel" data-icon="eye" data-iconpos="notext">Menu</a>
         <div data-role="navbar" data-grid="c">
     		<ul>
-        		<li><a href="#bios" data-icon="user">Bios</a></li>
-        		<li><a href="#songs" data-icon="audio">Songs</a></li>
-        		<li><a href="#gallery" data-icon="grid">Gallery</a></li>
+        		<li><a href="#bios" data-icon="user" data-transition="slide">Bios</a></li>
+        		<li><a href="#songs" data-icon="audio" data-transition="slide">Songs</a></li>
+        		<li><a href="#gallery" data-icon="grid" data-transition="slide">Gallery</a></li>
         		<li><a href="#" data-icon="eye" class="ui-btn-active ui-state-persist">Events</a></li>
     		</ul>
 		</div><!-- /navbar -->
