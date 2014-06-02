@@ -19,7 +19,7 @@
 	<div data-role="header">
     	<a href="index.html" data-iconshadow="true" class="ui-btn ui-shadow ui-corner-all ui-icon-user ui-btn-icon-notext ui-btn-active"></a>
 		<h1>Bios</h1>
-        <a href="#nav-panel" data-icon="eye" data-iconpos="notext">Menu</a>
+        <!--<a href="#nav-panel" data-icon="eye" data-iconpos="notext">Menu</a>-->
         <div data-role="navbar" data-grid="c">
     		<ul>
         		<li><a href="#" data-icon="user" class="ui-btn-active ui-state-persist">Bios</a></li>
@@ -85,9 +85,9 @@
 <div data-role="page" id="songs">
 
 	<div data-role="header">
-    	<a href="index.html" data-iconshadow="true" class="ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-notext"></a>
+    	<a href="index.html" data-iconshadow="true" class="ui-btn ui-shadow ui-corner-all ui-icon-audio ui-btn-icon-notext ui-btn-active"></a>
 		<h1>Songs</h1>
-        <a href="#nav-panel" data-icon="eye" data-iconpos="notext">Menu</a>
+        <!--<a href="#nav-panel" data-icon="eye" data-iconpos="notext">Menu</a>-->
         <div data-role="navbar" data-grid="c">
     		<ul>
         		<li><a href="#bios" data-icon="user">Bios</a></li>
@@ -118,8 +118,9 @@
 <div data-role="page" id="gallery">
 
 	<div data-role="header">
+    	<a href="index.html" data-iconshadow="true" class="ui-btn ui-shadow ui-corner-all ui-icon-grid ui-btn-icon-notext ui-btn-active"></a>
 		<h1>Gallery</h1>
-        <a href="#nav-panel" data-icon="eye" data-iconpos="notext">Menu</a>
+        <!--<a href="#nav-panel" data-icon="eye" data-iconpos="notext">Menu</a>-->
         <div data-role="navbar" data-grid="c">
     		<ul>
         		<li><a href="#bios" data-icon="user">Bios</a></li>
@@ -131,8 +132,18 @@
 	</div><!-- /header -->
 
 	<div role="main" class="ui-content">
-		<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
-		<p><a href="#foo">Back to foo</a></p>
+		<a href="#popupParis" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="../_assets/img/paris.jpg" alt="Paris, France" style="width:30%"></a>
+<a href="#popupSydney" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="../_assets/img/sydney.jpg" alt="Sydney, Australia" style="width:30%"></a>
+<a href="#popupNYC" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="../_assets/img/newyork.jpg" alt="New York, USA" style="width:30%"></a>
+<div data-role="popup" id="popupParis" data-overlay-theme="b" data-theme="b" data-corners="false">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="../_assets/img/paris.jpg" style="max-height:512px;" alt="Paris, France">
+</div>
+<div data-role="popup" id="popupSydney" data-overlay-theme="b" data-theme="b" data-corners="false">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="../_assets/img/sydney.jpg" style="max-height:512px;" alt="Sydney, Australia">
+</div>
+<div data-role="popup" id="popupNYC" data-overlay-theme="b" data-theme="b" data-corners="false">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="../_assets/img/newyork.jpg" style="max-height:512px;" alt="New York, USA">
+</div>ß
 	</div><!-- /content -->
 
 	<div data-role="footer">
@@ -150,7 +161,8 @@
 <div data-role="page" id="events">
 
 	<div data-role="header">
-		<h1>Timeline</h1>
+    	<a href="index.html" data-iconshadow="true" class="ui-btn ui-shadow ui-corner-all ui-icon-eye ui-btn-icon-notext ui-btn-active"></a>
+		<h1>Events</h1>
         <a href="#nav-panel" data-icon="eye" data-iconpos="notext">Menu</a>
         <div data-role="navbar" data-grid="c">
     		<ul>
