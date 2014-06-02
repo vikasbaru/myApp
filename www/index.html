@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="styles/main.css">
 	<script src="scripts/jquery.js"></script>
 	<script src="scripts/jquery.mobile-1.4.2.min.js"></script>
+    <script src="scripts/fastclick.js"></script>
 </head>
-<body>
 
+<body onload="initFastButtons();">
+<span id="fastclick">
 <!-- Start of first page -->
 <div data-role="page" id="bios">
 	<div data-role="header">
@@ -23,7 +25,7 @@
         		<li><a href="#" data-icon="user" class="ui-btn-active ui-state-persist">Bios</a></li>
         		<li><a href="#songs" data-icon="audio">Songs</a></li>
         		<li><a href="#gallery" data-icon="grid">Gallery</a></li>
-        		<li><a href="#timeline" data-icon="bars">Timeline</a></li>
+        		<li><a href="#events" data-icon="eye">Events</a></li>
     		</ul>
 		</div><!-- /navbar -->
 	</div><!-- /header -->
@@ -91,7 +93,7 @@
         		<li><a href="#bios" data-icon="user">Bios</a></li>
         		<li><a href="#" data-icon="audio" class="ui-btn-active ui-state-persist">Songs</a></li>
         		<li><a href="#gallery" data-icon="grid">Gallery</a></li>
-        		<li><a href="#timeline" data-icon="bars">Timeline</a></li>
+        		<li><a href="#events" data-icon="eye">Events</a></li>
     		</ul>
 		</div><!-- /navbar -->
 	</div><!-- /header -->
@@ -123,7 +125,7 @@
         		<li><a href="#bios" data-icon="user">Bios</a></li>
         		<li><a href="#songs" data-icon="audio">Songs</a></li>
         		<li><a href="#" data-icon="grid"  class="ui-btn-active ui-state-persist">Gallery</a></li>
-        		<li><a href="#timeline" data-icon="bars">Timeline</a></li>
+        		<li><a href="#events" data-icon="eye">Events</a></li>
     		</ul>
 		</div><!-- /navbar -->
 	</div><!-- /header -->
@@ -144,8 +146,8 @@
 	</div><!-- /footer -->
 </div><!-- /page -->
 
-<!-- Start of timeline page -->
-<div data-role="page" id="timeline">
+<!-- Start of events page -->
+<div data-role="page" id="events">
 
 	<div data-role="header">
 		<h1>Timeline</h1>
@@ -155,7 +157,7 @@
         		<li><a href="#bios" data-icon="user">Bios</a></li>
         		<li><a href="#songs" data-icon="audio">Songs</a></li>
         		<li><a href="#gallery" data-icon="grid">Gallery</a></li>
-        		<li><a href="#" data-icon="bars" class="ui-btn-active ui-state-persist">Timeline</a></li>
+        		<li><a href="#" data-icon="eye" class="ui-btn-active ui-state-persist">Events</a></li>
     		</ul>
 		</div><!-- /navbar -->
 	</div><!-- /header -->
@@ -175,6 +177,6 @@
         </div><!-- /navbar -->
 	</div><!-- /footer -->
 </div><!-- /page -->
-
+</span>
 </body>
 </html>
