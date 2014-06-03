@@ -18,11 +18,9 @@
 
 <!-- Start of bios page -->
 <div data-role="page" id="bios">
-	<div data-role="header" data-position="fixed">
-    	<a href="index.html" data-iconshadow="true" class="ui-btn ui-shadow ui-corner-all ui-icon-user ui-btn-icon-notext ui-btn-active"></a>
-		<h1>Bios</h1>
+	<div data-role="header">
         <!--<a href="#nav-panel" data-icon="eye" data-iconpos="notext">Menu</a>-->
-        <div data-role="navbar" data-grid="c">
+        <div data-role="navbar" data-grid="c"  data-position="fixed">
     		<ul>
         		<li><a href="#" data-icon="user" class="ui-btn-active ui-state-persist">Bios</a></li>
         		<li><a href="#songs" data-icon="audio" data-transition="slide">Songs</a></li>
@@ -30,6 +28,8 @@
         		<li><a href="#events" data-icon="calendar" data-transition="slide">Events</a></li>
     		</ul>
 		</div><!-- /navbar -->
+        <a href="index.html" data-iconshadow="true" class="ui-btn ui-shadow ui-corner-all ui-icon-user ui-btn-icon-notext ui-btn-active"></a>
+		<h1>Bios</h1>
 	</div><!-- /header -->
 
 	<div role="main" class="ui-content">
