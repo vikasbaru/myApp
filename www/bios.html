@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>El Camino</title>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+
+	<link rel="stylesheet" href="styles/jquery.mobile-1.4.2.min.css" />
+    <link rel="stylesheet" href="styles/main.css">
+	<script src="scripts/jquery.js"></script>
+	<script src="scripts/jquery.mobile-1.4.2.min.js"></script>
+    <script src="scripts/fastclick.js"></script>
+</head>
+
+<body onLoad="initFastButtons();">
+<span id="fastclick">
+
+<!-- Start of bios page -->
+<div data-role="page" id="bios">
+	<div data-role="header" data-position="fixed">
+    	<a href="index.html" data-iconshadow="true" class="ui-btn ui-shadow ui-corner-all ui-icon-user ui-btn-icon-notext ui-btn-active"></a>
+		<h1>Bios</h1>
+        <!--<a href="#nav-panel" data-icon="eye" data-iconpos="notext">Menu</a>-->
+        <div data-role="navbar" data-grid="c">
+    		<ul>
+        		<li><a href="#" data-icon="user" class="ui-btn-active ui-state-persist">Bios</a></li>
+        		<li><a href="#songs" data-icon="audio" data-transition="slide">Songs</a></li>
+        		<li><a href="#gallery" data-icon="grid" data-transition="slide">Gallery</a></li>
+        		<li><a href="#events" data-icon="calendar" data-transition="slide">Events</a></li>
+    		</ul>
+		</div><!-- /navbar -->
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<p>
+        	<center><img src="images/bios-banner" alt="bios" class="feat"></center>
+        </p>
+        <div class="ui-body ui-body-a">
+			<h3>Daniel</h3>
+      		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse accumsan blandit fermentum. Pellentesque cursus mauris purus, auctor commodo mi ullamcorper nec.</p>
+            <div class="ui-grid-b ui-responsive">
+    			<a href="#" class="ui-shadow ui-btn ui-corner-all ui-btn-icon-right ui-icon-arrow-r ui-btn-active">View Full Bio</a>
+            </div>
+  		</div>
+		<br>
+        <div class="ui-body ui-body-a">
+			<h3>Luan</h3>
+      		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse accumsan blandit fermentum. Pellentesque cursus mauris purus, auctor commodo mi ullamcorper nec.</p>
+            <div class="ui-grid-b ui-responsive">
+    			<a href="#" class="ui-shadow ui-btn ui-corner-all ui-btn-icon-right ui-icon-arrow-r ui-btn-active">View Full Bio</a>
+            </div>
+  		</div>
+		<br>
+        <div class="ui-body ui-body-a">
+			<h3>Margarita</h3>
+      		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse accumsan blandit fermentum. Pellentesque cursus mauris purus, auctor commodo mi ullamcorper nec.</p>
+            <div class="ui-grid-b ui-responsive">
+    			<a href="#" class="ui-shadow ui-btn ui-corner-all ui-btn-icon-right ui-icon-arrow-r ui-btn-active">View Full Bio</a>
+            </div>
+  		</div>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#" data-icon="grid">About App</a></li>
+                <li><a href="#" data-icon="star" class="ui-btn-active">Testimonials</a></li>
+                <li><a href="#" data-icon="phone">Contact</a></li>
+            </ul>
+        </div><!-- /navbar -->
+	</div><!-- /footer -->
+	
+    <div data-role="panel" data-position-fixed="true" data-position="right" data-display="push" data-theme="b" id="nav-panel">
+        <ul data-role="listview">
+            <li data-icon="delete"><a href="#" data-rel="close">Upcoming Events</a></li>
+            <li><a href="#panel-fixed-page2">Music Show Live in Amsterdam</a></li>
+            <li><a href="#panel-fixed-page2">Upcoming Live Show</a></li>
+            <li><a href="#panel-fixed-page2">06/25/2014 - Music</a></li>
+            <li><a href="#panel-fixed-page2">06/31/2014 - Live in Texas</a></li>
+            <li><a href="#panel-fixed-page2">08/12/2014 - Demo</a></li>
+        </ul>
+    </div><!-- /panel -->
+</div><!-- /page -->
+</span>
+</body>
+</html>

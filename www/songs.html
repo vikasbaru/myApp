@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>El Camino</title>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+
+	<link rel="stylesheet" href="styles/jquery.mobile-1.4.2.min.css" />
+    <link rel="stylesheet" href="styles/main.css">
+	<script src="scripts/jquery.js"></script>
+	<script src="scripts/jquery.mobile-1.4.2.min.js"></script>
+    <script src="scripts/fastclick.js"></script>
+</head>
+
+<body onLoad="initFastButtons();">
+<span id="fastclick">
+
+<!-- Start of songs page -->
+<div data-role="page" id="songs">
+
+	<div data-role="header">
+    	<a href="index.html" data-iconshadow="true" class="ui-btn ui-shadow ui-corner-all ui-icon-audio ui-btn-icon-notext ui-btn-active"></a>
+		<h1>Songs</h1>
+        <!--<a href="#nav-panel" data-icon="eye" data-iconpos="notext">Menu</a>-->
+        <div data-role="navbar" data-grid="c">
+    		<ul>
+        		<li><a href="#bios" data-icon="user" data-transition="slide">Bios</a></li>
+        		<li><a href="#" data-icon="audio" class="ui-btn-active ui-state-persist">Songs</a></li>
+        		<li><a href="#gallery" data-icon="grid" data-transition="slide">Gallery</a></li>
+        		<li><a href="#events" data-icon="calendar" data-transition="slide">Events</a></li>
+    		</ul>
+		</div><!-- /navbar -->
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+    	<div class="ui-body ui-body-a">
+    	<!--<audio controls="controls" autoplay="autoplay" loop="loop" preload="preload">
+<source src="http://jplayer.org/audio/ogg/Miaow-07-Bubble.ogg" />
+<source src="http://jplayer.org/audio/m4a/Miaow-07-Bubble.m4a" />
+</audio>-->
+		
+			<p><a href="#foo">Back to foo</a></p>
+        </div>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#" data-icon="grid">About App</a></li>
+                <li><a href="#" data-icon="star" class="ui-btn-active">Testimonials</a></li>
+                <li><a href="#" data-icon="gear">Contact</a></li>
+            </ul>
+        </div><!-- /navbar -->
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+</span>
+</body>
+</html>
