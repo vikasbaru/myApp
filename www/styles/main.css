@@ -32,6 +32,8 @@ body .ui-body-c{
     font-size:200%;
 }
 
+body, input, select, textarea, button, .ui-btn {font-family: Roboto, sans-serif, Arial, Segoe UI;}
+
 /*width, height*/
 .clear {clear:both;}
 
@@ -261,6 +263,25 @@ body .ui-body-c{
 }
 
 /*Styles by VB*/
+#home {background:url(../App_Resources/iOS/Default-Portrait.png) no-repeat top center; background-size:cover; text-align:center;}
+#home ul {padding:0; display:inline-block;}
+#home ul li {display:inherit; margin-right:10px;}
+#home ul li:last-child {margin-right:0;}
+#home ul li a {
+	background:rgba(230,0,14,0.7); 
+	color:#fff; 
+	text-shadow:none; 
+	border:1px solid rgb(230,0,14);
+	border-radius:50%;
+	width:65px;
+	height:65px;
+	font-weight:normal;
+	font-size:12px;
+	box-shadow:0 0 2px rgba(0,0,0,0.5);
+}
+
+#home #copy {position:absolute; bottom:10px; width:100%; color:#000;}
+
 img {max-width:100%;}
 .ui-page-theme-a .ui-btn.ui-btn-active, html .ui-bar-a .ui-btn.ui-btn-active, html .ui-body-a .ui-btn.ui-btn-active, html body .ui-group-theme-a .ui-btn.ui-btn-active, html head+body .ui-btn.ui-btn-a.ui-btn-active, .ui-page-theme-a .ui-checkbox-on:after, html .ui-bar-a .ui-checkbox-on:after, html .ui-body-a .ui-checkbox-on:after, html body .ui-group-theme-a .ui-checkbox-on:after, .ui-btn.ui-checkbox-on.ui-btn-a:after, .ui-page-theme-a .ui-flipswitch-active, html .ui-bar-a .ui-flipswitch-active, html .ui-body-a .ui-flipswitch-active, html body .ui-group-theme-a .ui-flipswitch-active, html body .ui-flipswitch.ui-bar-a.ui-flipswitch-active, .ui-page-theme-a .ui-slider-track .ui-btn-active, html .ui-bar-a .ui-slider-track .ui-btn-active, html .ui-body-a .ui-slider-track .ui-btn-active, html body .ui-group-theme-a .ui-slider-track .ui-btn-active, html body div.ui-slider-track.ui-body-a .ui-btn-active 
 {
