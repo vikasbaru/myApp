@@ -11,7 +11,7 @@
 	<script src="scripts/jquery.mobile-1.4.2.min.js"></script>
     <script src="scripts/fastclick.js"></script>
     <script src="scripts/functions.js"></script>                  
-	<script src="scripts/lightGallery.min.js"></script>
+	<script src="scripts/lightGallery.js"></script>
 </head>
 
 <body onLoad="initFastButtons();">
@@ -91,7 +91,7 @@
 
 </span>
 <script type="text/javascript">
-  $(document).ready(function() {
+ $(document).on('pageinit', function() {
     $("#lightGallery").lightGallery({mobileSrc:true}); 
   });
 </script>
