@@ -9,6 +9,7 @@ $(document).on('pageshow', '[data-role="page"]', function(){
         $.mobile.loading('hide');
     },300);      
 });
-$(document).on('swipe',"#popup1",function() {
-    alert("Hello");
-});
+
+$(document).on('pageinit', function() {
+    $("#lightGallery").lightGallery({mobileSrc:true}); 
+  });
