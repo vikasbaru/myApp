@@ -26,6 +26,7 @@ body
     height:100%;
     padding: 60px 0px 24px 0px;
 	overflow:hidden;
+	background: #6E0000;
 }
 body .ui-body-c{
     font-family:"Lucida Grande";
@@ -263,8 +264,9 @@ body, input, select, textarea, button, .ui-btn {font-family: Roboto, sans-serif,
 }
 
 /*Styles by VB*/
-body {background:url(../App_Resources/iOS/Default-Portrait.png) no-repeat top center fixed; background-size:auto 100%; text-align:center;}
-.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {background:rgba(0,0,0,0.2);}
+#home {background:url(../App_Resources/iOS/Default-Portrait.png) no-repeat top center fixed; background-size:auto 100%; text-align:center;}
+.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {background:transparent}
+.ui-page-theme-a .ui-bar-inherit {color:#fff; background-color: #6E0000; text-shadow:0 1px 0 #000;}
 #home .ui-btn-icon-top {padding-top:3em;}
 #home .ui-btn-icon-top:after {top:1em;}
 #home ul {padding:0; display:inline-block;}
@@ -281,6 +283,7 @@ body {background:url(../App_Resources/iOS/Default-Portrait.png) no-repeat top ce
 	font-size:12px;
 	box-shadow:0 0 2px rgba(0,0,0,0.5);
 }
+#home ul li a:hover {opacity:0.8;}
 
 #home #copy {position:absolute; bottom:10px; width:100%; color:#000;}
 
