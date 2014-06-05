@@ -12,4 +12,4 @@ $(document).on('pageshow', '[data-role="page"]', function(){
 
 $(document).on('pageinit', function() {
     $("#lightGallery").lightGallery({mobileSrc:true}); 
-  });
+});
