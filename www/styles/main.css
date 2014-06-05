@@ -297,5 +297,6 @@ img {max-width:100%;}
 	background-color:rgb(230,0,14);
 	border-color:rgb(230,0,14);
 }
-.gal a{display:block; float:left; width:33.33%; padding:10px; box-sizing:border-box;}
+.gal ul {padding:0;}
+.gal li{display:block; float:left; width:33.33%; padding:10px; box-sizing:border-box; list-style-type:none;}
 .gal a img {display:block; float:left;}
