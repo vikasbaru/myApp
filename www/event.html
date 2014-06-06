@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>El Camino</title>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+
+	<link rel="stylesheet" href="styles/jquery.mobile-1.4.2.min.css" />
+    <link href="styles/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+	<script src="scripts/jquery.js"></script>
+	<script src="scripts/jquery.mobile-1.4.2.min.js"></script>
+    <script src="scripts/fastclick.js"></script>
+    <script src="scripts/functions.js"></script> 
+</head>
+
+<body onLoad="initFastButtons();">
+<span id="fastclick">
+
+<!-- Start of event page -->
+<div data-role="page" id="event" data-title="Event">
+
+    <div data-role="header" data-position="fixed" data-theme="a">
+        <h1>Event Title</h1>
+        <a href="#demo-intro" data-rel="back" data-icon="back" data-iconpos="notext">Back</a>
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+    	<div class="ui-body ui-body-a">
+    		<h2>Avery Walker</h2>
+            <p><strong>Re: Dinner Tonight</strong></p>
+            <p>Sure, let's plan on meeting at Highland Kitchen at 8:00 tonight. Can't wait!</p>
+        </div>
+    </div><!-- /content -->
+	<div data-role="footer">
+		<ul>
+        	<li>
+            	<a href="#">
+    				<span class="fa-stack fa-lg">
+  						<i class="fa fa-circle fa-stack-2x"></i>
+  						<i class="fa fa-video-camera fa-stack-1x"></i>
+					</span><br>
+					Videos
+                </a>
+			</li>
+            <li>
+            	<a href="#">
+                	<span class="fa-stack fa-lg">
+  						<i class="fa fa-circle fa-stack-2x"></i>
+  						<i class="fa fa-thumbs-up fa-stack-1x"></i>
+					</span><br>
+					Fanpage
+                </a>
+			</li>
+            <li>
+            	<a href="#">
+            		<span class="fa-stack fa-lg">
+  						<i class="fa fa-circle fa-stack-2x"></i>
+  						<i class="fa fa-facebook fa-stack-1x"></i>
+					</span><br>
+					Facebook
+                </a>
+			</li>
+		</ul>
+	</div><!-- /footer -->
+</div><!-- /page -->
+</span>
+</body>
+</html>
