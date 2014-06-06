@@ -25,7 +25,7 @@ body
 	padding: 0;
     height:100%;
     padding: 60px 0px 24px 0px;
-	overflow:hidden;
+	/*overflow:hidden;*/
 	background: #6E0000;
 }
 body .ui-body-c{
