@@ -10,6 +10,3 @@ $(document).on('pageshow', '[data-role="page"]', function(){
     },300);      
 });
 
-$(document).on('pageinit', function() {
-    $("#lightGallery").lightGallery({mobileSrc:true}); 
-});
