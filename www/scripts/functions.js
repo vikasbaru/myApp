@@ -7,7 +7,7 @@ $(document).on('pagebeforecreate', '[data-role="page"]', function(){
 $(document).on('pageshow', '[data-role="page"]', function(){  
     setTimeout(function(){
         $.mobile.loading('hide');
-    },300);      
+    },100);      
 });
 
 $(document).on('pageinit', function() {
