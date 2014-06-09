@@ -14,3 +14,7 @@ $(document).on('pageinit', function() {
 	if( $('#lightGallery').length ) 
         $("#lightGallery").lightGallery({mobileSrc:true}); 
 });
+
+$(document).bind("mobileinit", function(){
+	$.mobile.touchOverflowEnabled = true;
+});
