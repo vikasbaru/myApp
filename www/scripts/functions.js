@@ -1,13 +1,9 @@
 $(document).on('pagebeforecreate', '[data-role="page"]', function(){     
-    setTimeout(function(){
-        $.mobile.loading('show');
-    },1);    
+        $.mobile.loading('show'); 
 });
 
 $(document).on('pageshow', '[data-role="page"]', function(){  
-    setTimeout(function(){
-        $.mobile.loading('hide');
-    },1);      
+        $.mobile.loading('hide');     
 });
 
 $(document).on('pageinit', function() {
