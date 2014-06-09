@@ -16,5 +16,6 @@ $(document).on('pageinit', function() {
 });
 
 $(document).bind("mobileinit", function(){
-	$.mobile.touchOverflowEnabled = true;
+	$.support.touchOverflow = true;
+    $.mobile.touchOverflowEnabled = true;
 });
