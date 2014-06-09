@@ -28,8 +28,16 @@ body
 	/*overflow:hidden;*/
 	background: #6E0000;
 }
-/*ui-panel-wrapper {-webkit-overflow-scrolling: touch;}
-*/body .ui-body-c{
+/*ui-panel-wrapper {-webkit-overflow-scrolling: touch;}*/
+.ui-panel-wrapper
+{
+  width: 100%;
+  height: (some-fixed-height);
+  overflow: hidden;
+  overflow-y: scroll !important;
+  -webkit-overflow-scrolling: touch;
+}
+body .ui-body-c{
     font-family:"Lucida Grande";
     font-size:200%;
 }
