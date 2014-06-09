@@ -11,6 +11,9 @@
 	width: device-width;
 	height: device-height;
 }
+@viewport {
+    orientation: portrait;
+}
 html
 {
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -32,7 +35,7 @@ body
 .ui-panel-wrapper
 {
   width: 100%;
-  height: (some-fixed-height);
+  height: 100%;
   overflow: hidden;
   overflow-y: scroll !important;
   -webkit-overflow-scrolling: touch;
