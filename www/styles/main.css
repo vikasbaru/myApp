@@ -12,7 +12,7 @@ body
 	font-size: 14px;
 	background: #6E0000;
 }
-.scrollable {-webkit-overflow-scrolling: touch; overflow-x:hidden; overflow-y:scroll;}
+.scrollable {-webkit-overflow-scrolling: touch; overflow-x:hidden; overflow-y:scroll; height:100%;}
 
 /*Styles by VB*/
 #home {background:url(../App_Resources/iOS/Default-Portrait.png) no-repeat top center fixed; background-size:auto 100%; text-align:center;}
