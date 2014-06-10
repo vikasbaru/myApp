@@ -12,11 +12,11 @@ body
 	font-size: 14px;
 	background: #6E0000;
 }
-.scrollable {-webkit-overflow-scrolling: touch; overflow-x:hidden; overflow-y:scroll; height:100%;}
+.scrollable {-webkit-overflow-scrolling: touch; overflow-x:hidden; overflow-y:scroll; height:99.9%;}
 
 /*Styles by VB*/
 #home {background:url(../App_Resources/iOS/Default-Portrait.png) no-repeat top center fixed; background-size:auto 100%; text-align:center;}
-.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {background:transparent; height:100%;}
+.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {background:transparent; height:99.9%;}
 .ui-page-theme-a .ui-bar-inherit {color:#fff; background-color: #6E0000; text-shadow:0 1px 0 #000;}
 #home .ui-btn-icon-top {padding-top:3em;}
 #home .ui-btn-icon-top:after {top:1em;}
@@ -60,3 +60,5 @@ img {max-width:100%;}
 .ui-footer a {text-align:center;  color:#fff; text-decoration:none; font-weight:normal;}
 .ui-footer a:hover {color:#ededed;}
 .ui-footer a .fa-stack-1x {color:#6E0000!important;}
+
+.bio .left {float:left; margin:4px 10px 10px 0; max-width:30%;}
