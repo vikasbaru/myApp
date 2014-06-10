@@ -4,6 +4,20 @@
   font-weight: 400;
   src: url(../fonts/roboto.woff) format('woff');
 }
+/* apply a natural box layout model to all elements */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+@-ms-viewport {
+	width: device-width;
+	height: device-height;
+}
+@viewport {
+    orientation: portrait;
+}
+html
+{
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 
 body
 { 
