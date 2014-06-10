@@ -10,7 +10,7 @@ body
 	font-size: 14px;
 	background: #6E0000;
 }
-.ui-panel-wrapper {overflow-y: scroll; -webkit-overflow-scrolling: touch;}
+.ui-panel-wrapper {overflow: auto; -webkit-overflow-scrolling: touch; height:100%;}
 
 /*Styles by VB*/
 #home {background:url(../App_Resources/iOS/Default-Portrait.png) no-repeat top center fixed; background-size:auto 100%; text-align:center;}
