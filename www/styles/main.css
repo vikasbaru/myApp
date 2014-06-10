@@ -10,11 +10,11 @@ body
 	font-size: 14px;
 	background: #6E0000;
 }
-.ui-panel-wrapper {overflow: auto; -webkit-overflow-scrolling: touch; height:100%;}
+.ui-panel-wrapper {-webkit-overflow-scrolling: touch; height:100%; overflow-x:hidden; overflow-y:scroll;}
 
 /*Styles by VB*/
 #home {background:url(../App_Resources/iOS/Default-Portrait.png) no-repeat top center fixed; background-size:auto 100%; text-align:center;}
-.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {background:transparent}
+.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {background:transparent; height:100%;}
 .ui-page-theme-a .ui-bar-inherit {color:#fff; background-color: #6E0000; text-shadow:0 1px 0 #000;}
 #home .ui-btn-icon-top {padding-top:3em;}
 #home .ui-btn-icon-top:after {top:1em;}
